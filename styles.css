@@ -57,7 +57,28 @@ button {
   cursor: pointer;
 }
 
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
 #liste {
   margin: 1.5rem 0 0;
   padding-left: 1.25rem;
+}
+
+@media (max-width: 32rem) {
+  main {
+    margin-top: 1rem;
+    padding: 1.25rem;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
 }
