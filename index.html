@@ -9,8 +9,9 @@
     <main>
       <h1>Ma liste de tâches</h1>
       <form id="formulaire-tache">
-        <input id="nouvelle-tache" type="text">
-        <button>Ajouter</button>
+        <label for="nouvelle-tache">Nouvelle tâche</label>
+        <input id="nouvelle-tache" name="tache" type="text" placeholder="Ex. Faire les exercices" required>
+        <button type="submit">Ajouter</button>
       </form>
       <ul id="liste"></ul>
     </main>
